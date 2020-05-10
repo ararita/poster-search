@@ -1,19 +1,29 @@
-import React from "react";
-// import "./App.css";
+import React, { useState } from "react";
+import style from "./Nav.module.css";
 
-function Nav() {
+function Nav(props) {
+  const [search, setSearch] = useState("");
+  const setQuery = props.setQuery;
+
+  const getSearch = e => {
+    e.preventDefault();
+    setQuery(search);
+    setSearch("");
+  };
+
   return (
     <nav>
-      <h3>Logo</h3>
-      <input
-        // className={styles.todoInput}
-        type="text"
-        // value={text}
-        placeholder="Search"
-        // onInput={e => setText(e.target.value)}
-        // onKeyUp={handleInputKeyUp}
-        // onChange={null}
-      />
+      <form onSubmit={getSearch} className={style.form}>
+        <input
+          className={style.searchBar}
+          type="text"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+        />
+        <button className={style.searchButton} type="submit">
+          Search
+        </button>
+      </form>
     </nav>
   );
 }

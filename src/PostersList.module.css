@@ -1,0 +1,8 @@
+.PostersList {
+  display: grid;
+  grid-gap: 32px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

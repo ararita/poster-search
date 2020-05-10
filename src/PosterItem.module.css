@@ -1,0 +1,61 @@
+.PosterItem {
+  box-shadow: 0px 5px 10px rgba(138, 136, 136, 0.74);
+  border-radius: 5px;
+  padding: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainContent {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.title {
+  margin-top: 0px;
+  color: #424d5d;
+  /* word-break: break-all; */
+}
+
+.title:hover {
+  color: #59d3ce;
+}
+
+.image {
+  width: 100px;
+  margin-right: 10px;
+  flex: 0 0 100px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.keywordsBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singleKeyword {
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  margin: 2px 2px;
+  padding: 5px;
+  border-radius: 3px;
+  color: #505357e3;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.authorsBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singleAuthor {
+  color: #90969ea6;
+  font-weight: 400;
+  margin-right: 5px;
+  padding: 5px 0;
+}

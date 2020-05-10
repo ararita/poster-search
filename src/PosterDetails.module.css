@@ -1,0 +1,32 @@
+.posterDetails {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  margin: 60px 0px 80px;
+}
+
+.keywordsBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.singleKeyword {
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  margin: 2px 2px;
+  padding: 5px;
+  border-radius: 3px;
+  color: #505357e3;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.abstract {
+  margin-bottom: 60px;
+}
